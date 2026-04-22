@@ -1,0 +1,67 @@
+/* ============================================
+   IBuyFlowers HubSpot CMS Guide
+   typography.css
+   ============================================ */
+
+/* ============================================
+   TYPOGRAPHY — CUSTOM PROPERTIES
+   ============================================ */
+
+:root {
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 700;
+  --line-height-120: 1.2;
+  --line-height-150: 1.5;
+}
+
+/* ============================================
+   TYPOGRAPHY — GLOBAL HEADINGS
+   ============================================ */
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Noto Serif', serif;
+  font-weight: var(--font-weight-medium);
+  line-height: var(--line-height-120);
+  transition: 0.3s;
+  color: var(--ibf-green);
+}
+
+h1 { 
+  font-size: 2.5rem;   
+  }   /* 40px */
+
+h2 { 
+  font-size: 1.5rem;     
+  }   /* 32px */
+
+h3 { 
+  font-size: 1.25rem;  
+  }   /* 28px */
+
+h4 { 
+  font-size: 1rem; 
+  }   /* 22px */
+
+h5 { 
+  font-size: 1.25rem;  font-weight: var(--font-weight-regular); line-height: var(--line-height-150); 
+  }   /* 20px */
+
+@supports (font-stretch: 75%) {
+  h1, h2, h3, h4 { font-stretch: 75%; }
+}
+@supports not (font-stretch: 75%) {
+  h1, h2, h3, h4 { font-variation-settings: 'wdth' 75; }
+}
+
+/* ============================================
+   TYPOGRAPHY — MOBILE OVERRIDES
+   ============================================ */
+
+@media (max-width: 767px) {
+  h1 { font-size: 2rem;    }   /* 32px */
+  h2 { font-size: 1.5rem;  }   /* 24px */
+  h3 { font-size: 1.5rem;  }   /* 24px */
+  h4 { font-size: 1.125rem;}   /* 18px */
+  h5 { font-size: 1.125rem;}   /* 18px */
+}
