@@ -56,9 +56,9 @@ document.addEventListener('DOMContentLoaded', () => {
         navLinks.forEach(link => {
           link.classList.toggle('active', link.getAttribute('href') === `#${id}`);
         });
-        // Ensure the nav group for this section is expanded when scrolling through it
-        const section = entry.target.closest('.guide-section');
-        if (section) setNavGroup(section.id, true);
+        // NOTE: intentionally NOT calling setNavGroup here — nav groups should only
+        // open/close via explicit user interaction (header click, nav link click, section hero click).
+        // Auto-expanding while scrolling felt unintended when groups are intentionally closed.
       }
     });
   }, {
