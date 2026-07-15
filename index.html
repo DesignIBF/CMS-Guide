@@ -160,6 +160,8 @@
               <li><a href="#task-employee"   class="nav-link">Add a new team member</a></li>
               <li><a href="#task-page-edit"  class="nav-link">Update page copy or a banner</a></li>
               <li><a href="#task-upload"    class="nav-link">Upload an image or file</a></li>
+              <li><a href="#task-vacancy"   class="nav-link">Add, edit or remove a vacancy</a></li>
+              <li><a href="#task-employee-photos" class="nav-link">Employee profile photos</a></li>
             </ul>
           </div>
 
@@ -2498,6 +2500,10 @@
                   <td><strong>Career Details Section</strong></td>
                   <td>Individual job vacancy pages — title, location, schedule, employment type</td>
                 </tr>
+                <tr>
+                  <td><strong>Article — Vacancies Section</strong></td>
+                  <td>The careers page listing — shows all open vacancies with job title, location, employment type, and a link to each vacancy's detail page. Add or remove entries here when vacancies open or close.</td>
+                </tr>
               </tbody>
             </table>
 
@@ -2668,6 +2674,16 @@
                 <tr>
                   <td><a href="#task-page-edit">Update page copy or a banner</a></td>
                   <td>HubSpot page editor</td>
+                  <td>5–10 min</td>
+                </tr>
+                <tr>
+                  <td><a href="#task-vacancy">Add, edit or remove a job vacancy</a></td>
+                  <td>HubSpot page editor</td>
+                  <td>5–10 min</td>
+                </tr>
+                <tr>
+                  <td><a href="#task-employee-photos">Prepare &amp; update employee profile photos</a></td>
+                  <td>File Manager + HubDB → employees</td>
                   <td>5–10 min</td>
                 </tr>
               </tbody>
@@ -3325,6 +3341,218 @@
               <div class="callout-body">
                 <strong>Do not upload to the root or wrong folders</strong>
                 <p>Uploading files to the wrong folder or directly to the root of the File Manager makes images hard to find and maintain. Always navigate to the correct <code>IBF-theme-2025/images/[folder]</code> sub-folder first.</p>
+              </div>
+            </div>
+          </article>
+
+          <div class="divider"></div>
+
+          <!-- TASK 9: Add, edit or remove a job vacancy -->
+          <article class="article" id="task-vacancy">
+            <h2>Task: Add, edit or remove a job vacancy</h2>
+            <p>Job vacancies on the IBuyFlowers website are individual website pages, each built using the <strong>Career Details Section</strong> module. To manage vacancies you work directly in the page editor — there is no HubDB table for this.</p>
+
+            <h3>To add a new vacancy</h3>
+
+            <div class="callout callout--info">
+              <div class="callout-icon">📋</div>
+              <div class="callout-body">
+                <strong>What you'll need before you start</strong>
+                <ul class="callout-list">
+                  <li>Job title</li>
+                  <li>Location (e.g. Remote, Miami FL)</li>
+                  <li>Employment type (e.g. Full-time, Part-time)</li>
+                  <li>Schedule (e.g. Monday – Friday)</li>
+                  <li>Full job description text</li>
+                  <li>A URL slug for the page (e.g. <code>/careers/marketing-manager</code>)</li>
+                </ul>
+              </div>
+            </div>
+
+            <ol class="steps">
+              <li>
+                <div class="step-num">1</div>
+                <div class="step-body">
+                  <strong>Find an existing vacancy page to clone</strong>
+                  <p>Go to <code>Content → Website Pages</code> and search for an existing careers page (try searching "careers" or the job title of a known vacancy). Hover over it and click <strong>Actions → Clone</strong>.</p>
+                </div>
+              </li>
+              <li>
+                <div class="step-num">2</div>
+                <div class="step-body">
+                  <strong>Open the cloned page for editing</strong>
+                  <p>The clone will appear in the list with <em>"(copy of...)"</em> in its name and will be in <strong>Draft</strong> status. Hover over it and click <strong>Edit</strong>.</p>
+                </div>
+              </li>
+              <li>
+                <div class="step-num">3</div>
+                <div class="step-body">
+                  <strong>Update the Career Details Section module</strong>
+                  <p>Click the <strong>Career Details Section</strong> module in the left panel. Fill in all the fields for the new role — job title, location, schedule, employment type, and the full job description.</p>
+                </div>
+              </li>
+              <li>
+                <div class="step-num">4</div>
+                <div class="step-body">
+                  <strong>Set the page settings</strong>
+                  <p>Click <strong>Settings</strong> in the top toolbar and update:</p>
+                  <ul class="field-list">
+                    <li><strong>Page title</strong><span> — e.g. <em>"Marketing Manager — IBuyFlowers Careers"</em></span></li>
+                    <li><strong>URL slug</strong><span> — e.g. <code>/careers/marketing-manager</code>. Set this carefully — don't change it after publishing.</span></li>
+                    <li><strong>Meta description</strong><span> — a brief summary of the role (under 160 characters)</span></li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <div class="step-num">5</div>
+                <div class="step-body">
+                  <strong>Preview and publish the vacancy page</strong>
+                  <p>Click <strong>Preview</strong> to check the page, then click <strong>Publish</strong> to make it live.</p>
+                </div>
+              </li>
+              <li>
+                <div class="step-num">6</div>
+                <div class="step-body">
+                  <strong>Add the vacancy to the Careers page listing</strong>
+                  <p>Go to <code>Content → Website Pages</code>, find the <strong>Careers</strong> page, and click <strong>Edit</strong>. Click the <strong>Article — Vacancies Section</strong> module. Add a new entry and fill in:</p>
+                  <ul class="field-list">
+                    <li><strong>Job Title</strong><span> — the role name as it should appear in the listing</span></li>
+                    <li><strong>Location</strong><span> — e.g. <em>Remote (West Coast)</em></span></li>
+                    <li><strong>Employment Type</strong><span> — e.g. <em>Full-time</em></span></li>
+                    <li><strong>Link to Vacancy Page</strong><span> — set <em>Link to</em> to <strong>Page</strong> and select the vacancy page you just published from the dropdown</span></li>
+                  </ul>
+                  <p>Click <strong>Publish</strong> on the Careers page to make the new listing visible.</p>
+                </div>
+              </li>
+            </ol>
+
+            <h3>To edit an existing vacancy</h3>
+            <ol class="steps">
+              <li>
+                <div class="step-num">1</div>
+                <div class="step-body">
+                  <strong>Find the page</strong>
+                  <p>Go to <code>Content → Website Pages</code>, search for the job title, and click <strong>Edit</strong>.</p>
+                </div>
+              </li>
+              <li>
+                <div class="step-num">2</div>
+                <div class="step-body">
+                  <strong>Update the Career Details Section</strong>
+                  <p>Click the module and change the relevant fields. The preview updates as you type.</p>
+                </div>
+              </li>
+              <li>
+                <div class="step-num">3</div>
+                <div class="step-body">
+                  <strong>Click Publish</strong>
+                  <p>The updated vacancy page goes live immediately.</p>
+                </div>
+              </li>
+            </ol>
+
+            <h3>To remove or close a vacancy</h3>
+            <ol class="steps">
+              <li>
+                <div class="step-num">1</div>
+                <div class="step-body">
+                  <strong>Remove the entry from the Careers page listing</strong>
+                  <p>Go to <code>Content → Website Pages</code>, find the <strong>Careers</strong> page, and click <strong>Edit</strong>. Click the <strong>Article — Vacancies Section</strong> module, find the entry for this vacancy, and delete it. Click <strong>Publish</strong> on the Careers page.</p>
+                </div>
+              </li>
+              <li>
+                <div class="step-num">2</div>
+                <div class="step-body">
+                  <strong>Unpublish the vacancy page</strong>
+                  <p>Go to <code>Content → Website Pages</code> and search for the vacancy page. Hover over the row, click <strong>Actions → Unpublish</strong>. The page is removed from the website but kept as a draft — you can republish it if the role reopens.</p>
+                </div>
+              </li>
+            </ol>
+
+            <div class="callout callout--warning">
+              <div class="callout-icon">⚠️</div>
+              <div class="callout-body">
+                <strong>Don't delete the page — unpublish it instead</strong>
+                <p>Deleting a page removes it permanently and breaks any links pointing to it. Unpublishing keeps the page as a draft so it can be reused if the same role opens again in the future.</p>
+              </div>
+            </div>
+          </article>
+
+          <div class="divider"></div>
+
+          <!-- TASK 10: Prepare & update employee profile photos -->
+          <article class="article" id="task-employee-photos">
+            <h2>Task: Prepare &amp; update employee profile photos</h2>
+            <p>Employee cards on the About and Careers pages are powered by the <code>employees</code> HubDB table. Each card displays a name, role, and profile photo. This task covers how to prepare, upload, and link a photo — and how to replace or remove one.</p>
+
+            <h3>Photo preparation guidelines</h3>
+            <p>Always prepare the photo before uploading. Uploading an unresized camera photo will slow down the page for visitors.</p>
+
+            <table class="terms-table">
+              <thead><tr><th>Setting</th><th>Recommended value</th></tr></thead>
+              <tbody>
+                <tr><td><strong>Format</strong></td><td>JPG</td></tr>
+                <tr><td><strong>Dimensions</strong></td><td>400 × 400 px (square crop — 1:1 ratio)</td></tr>
+                <tr><td><strong>File size</strong></td><td>~80 KB or less</td></tr>
+                <tr><td><strong>Subject framing</strong></td><td>Head and shoulders, centred</td></tr>
+              </tbody>
+            </table>
+
+            <div class="callout callout--tip">
+              <div class="callout-icon">💡</div>
+              <div class="callout-body">
+                <strong>Free tool: squoosh.app</strong>
+                <p>Open <strong>squoosh.app</strong> in your browser, drag in the photo, crop it to a square, resize to 400 × 400 px, and set the format to JPG. Adjust the quality slider until the file size is around 80 KB without visible quality loss, then download.</p>
+              </div>
+            </div>
+
+            <h3>To add or replace a profile photo</h3>
+            <ol class="steps">
+              <li>
+                <div class="step-num">1</div>
+                <div class="step-body">
+                  <strong>Upload the photo to the File Manager</strong>
+                  <p>Go to <code>Marketing → Files</code>. Navigate to <strong>IBF-theme-2025 → images → employees</strong> and click <strong>Upload files</strong>. Select your prepared photo.</p>
+                </div>
+              </li>
+              <li>
+                <div class="step-num">2</div>
+                <div class="step-body">
+                  <strong>Go to the employees HubDB table</strong>
+                  <p>Navigate to <code>Content → HubDB → employees</code>.</p>
+                </div>
+              </li>
+              <li>
+                <div class="step-num">3</div>
+                <div class="step-body">
+                  <strong>Find the employee's row</strong>
+                  <p>Use the <strong>Search</strong> bar at the top of the table to find the person by name.</p>
+                </div>
+              </li>
+              <li>
+                <div class="step-num">4</div>
+                <div class="step-body">
+                  <strong>Click the IMAGE cell</strong>
+                  <p>Click the image cell in that row. The file picker opens — navigate to <strong>IBF-theme-2025 → images → employees</strong> and select the photo you just uploaded. If you're replacing an existing photo, simply select the new one and the old one will be overwritten.</p>
+                </div>
+              </li>
+              <li>
+                <div class="step-num">5</div>
+                <div class="step-body">
+                  <strong>Click Publish</strong>
+                  <p>The updated photo appears on the About and Careers pages immediately after publishing.</p>
+                </div>
+              </li>
+            </ol>
+
+            <h3>To remove a photo (when an employee leaves)</h3>
+            <p>To remove someone from the team page entirely, delete their row from the <code>employees</code> HubDB table and publish. Their card will disappear from the website. If you'd prefer not to delete, ask Sam — a row can also be hidden without deleting it.</p>
+
+            <div class="callout callout--warning">
+              <div class="callout-icon">⚠️</div>
+              <div class="callout-body">
+                <strong>Use the employees folder — not the root</strong>
+                <p>Always upload employee photos to <code>IBF-theme-2025 → images → employees</code>. Uploading to the wrong folder or directly to the File Manager root makes photos hard to find and maintain over time.</p>
               </div>
             </div>
           </article>
